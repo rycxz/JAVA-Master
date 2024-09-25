@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.io.Serializable"/>
+    <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="instrumentos.Instrumento"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="instrumentos.Flauta"/>
+    <fullyQualifiedTypeName name="instrumentos.Guitarra"/>
+    <fullyQualifiedTypeName name="instrumentos.Tambor"/>
+    <fullyQualifiedTypeName name="instrumentos.GuitarraElectrica"/>
+    <fullyQualifiedTypeName name="impresora.Pagina"/>
+    <fullyQualifiedTypeName name="impresora.Factura"/>
+</qualifiedTypeNameHistroy>
