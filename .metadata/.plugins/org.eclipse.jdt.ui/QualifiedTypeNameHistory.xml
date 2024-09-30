@@ -2,14 +2,26 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.io.Serializable"/>
-    <fullyQualifiedTypeName name="java.time.LocalDate"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="instrumentos.Instrumento"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="instrumentos.Flauta"/>
     <fullyQualifiedTypeName name="instrumentos.Guitarra"/>
     <fullyQualifiedTypeName name="instrumentos.Tambor"/>
     <fullyQualifiedTypeName name="instrumentos.GuitarraElectrica"/>
     <fullyQualifiedTypeName name="impresora.Pagina"/>
     <fullyQualifiedTypeName name="impresora.Factura"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="animales.Animales"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="animales.Gato"/>
+    <fullyQualifiedTypeName name="animales.Arania"/>
+    <fullyQualifiedTypeName name="animales.Peces"/>
+    <fullyQualifiedTypeName name="figurasAbstarct.Cuadrado"/>
+    <fullyQualifiedTypeName name="figurasAbstarct.Rectangulo"/>
+    <fullyQualifiedTypeName name="figurasAbstarct.Circulo"/>
+    <fullyQualifiedTypeName name="figurasInterfaz.CuadradoInter"/>
+    <fullyQualifiedTypeName name="figurasInterfaz.RectanguloInter"/>
+    <fullyQualifiedTypeName name="figurasInterfaz.CirculoInter"/>
+    <fullyQualifiedTypeName name="figurasInterfaz.TrianguloEquilateroInter"/>
+    <fullyQualifiedTypeName name="figurasAbstarct.TrianguloEquilatero"/>
+    <fullyQualifiedTypeName name="java.time.LocalDate"/>
 </qualifiedTypeNameHistroy>
