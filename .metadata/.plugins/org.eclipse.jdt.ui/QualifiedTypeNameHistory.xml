@@ -9,9 +9,7 @@
     <fullyQualifiedTypeName name="instrumentos.GuitarraElectrica"/>
     <fullyQualifiedTypeName name="impresora.Pagina"/>
     <fullyQualifiedTypeName name="impresora.Factura"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="animales.Animales"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="animales.Gato"/>
     <fullyQualifiedTypeName name="animales.Arania"/>
     <fullyQualifiedTypeName name="animales.Peces"/>
@@ -23,5 +21,14 @@
     <fullyQualifiedTypeName name="figurasInterfaz.CirculoInter"/>
     <fullyQualifiedTypeName name="figurasInterfaz.TrianguloEquilateroInter"/>
     <fullyQualifiedTypeName name="figurasAbstarct.TrianguloEquilatero"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="java.time.temporal.ChronoUnit"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="vehiculos.Vehiculo"/>
+    <fullyQualifiedTypeName name="vehiculos.Coche"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
+    <fullyQualifiedTypeName name="vehiculos.Gestor"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.BeforeAll"/>
 </qualifiedTypeNameHistroy>
