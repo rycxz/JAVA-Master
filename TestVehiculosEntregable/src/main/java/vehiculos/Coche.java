@@ -4,6 +4,16 @@ package vehiculos;
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
 
+
+/**
+ * 
+ * @author Ricardo Sorin Almajan
+ * 
+ * @version 1.0 
+ * 
+ * Esta es la clase del coche con sus metodos y sus metodos sobreescritos.
+ *
+ */
 public class Coche extends Vehiculo {
 
 	private String tipoCombustible;

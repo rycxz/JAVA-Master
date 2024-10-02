@@ -30,5 +30,7 @@
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
     <fullyQualifiedTypeName name="vehiculos.Gestor"/>
+    <fullyQualifiedTypeName name="com.curso.colegio.Nota"/>
     <fullyQualifiedTypeName name="org.junit.jupiter.api.BeforeAll"/>
+    <fullyQualifiedTypeName name="com.conversor.Conversor"/>
 </qualifiedTypeNameHistroy>

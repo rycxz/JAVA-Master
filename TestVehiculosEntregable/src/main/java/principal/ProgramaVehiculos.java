@@ -2,10 +2,20 @@ package principal;
 
  
 import java.util.ArrayList;
+
 import java.util.List;
 
 import vehiculos.Gestor;
 import vehiculos.Vehiculo;
+
+/**
+ * 
+ * @author Ricardo Sorin Almajan 
+ * @version 0.1
+ * 
+ * Esta el el main de lprograma donde instanciamos lo vehiculos y hacemos las llamadas del gestor
+ *
+ */
 
 public class ProgramaVehiculos {
 
