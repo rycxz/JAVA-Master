@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<script>
+do{
+let numero = parseInt(prompt("Digame su numero"));
+}
+while(numero<=0);
+
+
+function sumatorio(numero){
+	numeroAux = numero;
+	for(i =1 ; i<=numero ; i++){
+		  numeroAux = numeroAux + i;
+	}
+	 
+	 document.getElementById("resultado").innerHTML =( "el numero es " + numeroAux);
+	 return numeroAux;
+}
+ 
+
+ 
+
+</script>
+   <button onclick = "sumatorio(numero)"> pulsame  !</button> 
+   
+   
+   <p> 
+      <div id = "resultado"> </div> 
+   </p> 
+
+
+
+
+</body>
+</html>
