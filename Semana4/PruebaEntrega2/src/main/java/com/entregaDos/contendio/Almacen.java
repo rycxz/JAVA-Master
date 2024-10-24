@@ -16,18 +16,14 @@ public class Almacen {
 		this.misProductos = new ArrayList<>();
 	}
 	
-	 
- 
 	public ArrayList<Producto> getMisProductos() {
 		return misProductos;
 	}
 
 
-
 	public void setMisProductos(ArrayList<Producto> misProductos) {
 		this.misProductos = misProductos;
 	}
-
 
 
 	public String aniadirProducto(int iD, String tipo, String nombre, double precio, boolean stock) {
