@@ -35,3 +35,6 @@ INSERT INTO Empresa.Empleados (nombre, apellido_uno, apellido_dos, fecha_nacimie
 ('Adrián', 'Ruiz', 'Serrano', '1994-07-04', 3100),
 ('Teresa', 'Núñez', 'Blanco', '1989-11-02', 3200);
 
+
+use empresa;
+select * from empleados where apellido_uno like "Vega" ;
