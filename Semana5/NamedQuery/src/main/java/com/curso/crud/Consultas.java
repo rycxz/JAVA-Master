@@ -24,25 +24,25 @@ public class Consultas {
 	
 	 public List<Libro>buscarLibro(){
 		 em = emf.createEntityManager();
-		 libro = em.createQuery("BuscarTodo",Libro.class);
+		 libro = em.createNamedQuery("BuscarTodo",Libro.class);
 		 return libro.getResultList();
 	 }
 	 
 	 public List<Libro>buscarPorAutor(String autor){
 		 em = emf.createEntityManager();
-		 libro = em.createQuery("BuscarPorAutor",Libro.class);
+		 libro = em.createNamedQuery("BuscarPorAutor",Libro.class);
 		 libro.setParameter("autor", autor);
 		 return libro.getResultList();
 	 }
 	 public List<Libro>buscarPorISBN(String isbn){
 		 em = emf.createEntityManager();
-		 libro = em.createQuery("BuscarPorIsbn",Libro.class);
+		 libro = em.createNamedQuery("BuscarPorIsbn",Libro.class);
 		 libro.setParameter("isbn", isbn);
 		 return libro.getResultList();
 	 }
 	 public List<Libro>buscarPorTitulo(String titulo){
 		 em = emf.createEntityManager();
-		 libro = em.createQuery("BuscarPortitulo",Libro.class);
+		 libro = em.createNamedQuery("BuscarPortitulo",Libro.class);
 		 libro.setParameter("titulo", titulo);
 		 return libro.getResultList();
 	 }
