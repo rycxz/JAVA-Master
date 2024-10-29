@@ -1,0 +1,24 @@
+Recurso : Curso
+
+get--> recuerar todos los cursos en un rango de precios  (http://localhost8080/cursos/{precioMin}/{precioMax})
+
+get --> recuperar un curso (http://localhost8080/cursos/{codigo})
+
+post --> insertar un curso	(http://localhost8080/cursos)
+
+put --> actualizar un curso , la duracion de este 	(http://localhost8080/curso/{codigo}/{duracion})
+
+delete --> eliminar un curso 	(http://localhost8080/cursos/{codigo})
+
+1-CrearPryecto (insertar starter)
+2-trabajar con el modelo de datos
+3-Logica de a capa de negocio--> capa de servicio
+	3.1 Crear interfaz
+	3.2 Crear clase que implementea interfaz
+4. Implemntamos el contolador (com.curso.controller) con sus antoacones
+5.Configuracion clase lanzadera
+
+  
+ 
+  
+ 

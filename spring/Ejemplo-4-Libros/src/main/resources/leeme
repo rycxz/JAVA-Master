@@ -1,0 +1,19 @@
+Recurso : Libro
+
+get--> recuerar todos los libros (http://localhost8080/libros)
+
+get --> recuperar un libro (http://localhost8080/libros/{isbn})
+
+post --> insertar un libro	(http://localhost8080/libros)
+
+put --> actualizar un libro	(http://localhost8080/libros)
+
+delete --> eliminar un libro 	(http://localhost8080/libros/{isbn})
+
+1-CrearPryecto (insertar starter)
+2-trabajar con el modelo de datos
+3-Logica de a capa de negocio--> capa de servicio
+	3.1Crear interfaz
+	3.2Crear clase que implementea interfaz
+4. Implemntamos el contolador (com.curso.controller) con sus antoacones
+5.Configuracion clase lanzadera
