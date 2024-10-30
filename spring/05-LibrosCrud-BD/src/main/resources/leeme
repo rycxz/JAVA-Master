@@ -1,0 +1,22 @@
+Recurso : Libro
+
+get--> recuerar todos los libros (http://localhost8080/libros)
+
+get --> recuperar un libro (http://localhost8080/libros/{isbn})
+
+post --> insertar un libro	(http://localhost8080/libros)
+
+put --> actualizar un libro	(http://localhost8080/libros)
+
+delete --> eliminar un libro 	(http://localhost8080/libros/{isbn})
+
+1-CrearPryecto (insertar starter)
+2-trabajar con el modelo de datos
+3- Creaear la capa repository (com.curso.repository)
+	3.1Crear interfaz XXXReostory que hace un extend de JpaRpository<T,Td>
+	donde T es el tipo de entindad y el ID es el tipo de la clave pirmaria 
+	3.2Crear clase que implementea interfaz
+4. logica de capa de negocio
+	4.1 interfaz de capa de negocio
+	4.2 crear clase que la implemente  (@service y @Autowired)
+5.Configuracion clase lanzadera
