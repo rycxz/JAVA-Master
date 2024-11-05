@@ -6,4 +6,6 @@ import com.curso.model.Libro;
 
 public interface LibrosRepository extends JpaRepository<Libro, Integer>{
 
+ 
+
 }

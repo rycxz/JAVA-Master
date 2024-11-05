@@ -15,4 +15,5 @@ public interface LibroService {
 	void altaLibro(Libro lib);
 	void actualizarLibro(Libro lib);
 	List<Libro> elminarLibro(int isbn);
+ 
 }

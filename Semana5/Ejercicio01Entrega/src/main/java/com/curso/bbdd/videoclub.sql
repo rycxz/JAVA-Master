@@ -38,3 +38,6 @@ INSERT INTO pelicula (codigo, titulo, director, precio_alquiler) VALUES
 (28, 'La La Land', 'Damien Chazelle', 3.25),
 (29, 'Joker', 'Todd Phillips', 3.99),
 (30, 'Black Swan', 'Darren Aronofsky', 3.50);
+
+
+Select * from pelicula p;

@@ -1,6 +1,5 @@
 package com.curso.service;
-
-import java.util.ArrayList;
+ 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -40,8 +39,10 @@ public class LibroServiceImpl implements LibroService {
 
 	@Override
 	public List<Libro> elminarLibro(int isbn) { 
-				repository.delete(null);
+				repository.deleteById(isbn);
 				return repository.findAll();
 	}
+
+	 
 
 }

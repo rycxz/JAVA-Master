@@ -1,14 +1,14 @@
-Recurso : Libro
+Recurso :  Curso
 
-get--> recuerar todos los libros (http://localhost8080/libros)
+get--> recuerar todos los curso (http://localhost8080/curso)
 
-get --> recuperar un libro (http://localhost8080/libros/{isbn})
+get --> recuperar un curso (http://localhost8080/curso/{codCurso})
 
-post --> insertar un libro	(http://localhost8080/libros)
+post --> insertar un curso	(http://localhost8080/curso)
 
-put --> actualizar un libro	(http://localhost8080/libros)
+put --> actualizar un curso	(http://localhost8080/curso)
 
-delete --> eliminar un libro 	(http://localhost8080/libros/{isbn})
+delete --> eliminar un curso 	(http://localhost8080/libros/{codCurso})
 
 1-CrearPryecto (insertar starter)
 2-trabajar con el modelo de datos
@@ -19,5 +19,4 @@ delete --> eliminar un libro 	(http://localhost8080/libros/{isbn})
 4. logica de capa de negocio
 	4.1 interfaz de capa de negocio
 	4.2 crear clase que la implemente  (@service y @Autowired)
-5.Configuracion cdel controlador
-6 hacer configuraciones
+5.Configuracion clase lanzadera
