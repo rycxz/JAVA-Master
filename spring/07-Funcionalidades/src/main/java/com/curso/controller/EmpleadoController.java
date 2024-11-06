@@ -10,22 +10,16 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
-
-import com.curso.model.Empleado;
-import com.curso.service.EmpleadoService;
-
+ 
 import io.swagger.v3.oas.annotations.tags.Tag;
-@Tag(name = "Empleados", description = " la Api de los empleados")
+ 
 @RestController
 public class EmpleadoController {
 	@Autowired
-	EmpleadoService empleadosService;
 	
-	@Operation(summary = "Buscar  los empleados ", description = "Devolvemos todos los empleados", responses = { 
-			@ApiResponse(responseCode = "201", description = "Libro creado con éxito"),
-			@ApiResponse(responseCode = "400", description = "Solicitud inválida"),
-			@ApiResponse(responseCode = "409", description = "Conflicto: el libro ya existe")
-			})
+	FormacionService empleadosService;
+	
+	 
 
 	@GetMapping(value = "empleados", produces=MediaType.APPLICATION_JSON_VALUE)
 	public List<Empleado> empleados() {
