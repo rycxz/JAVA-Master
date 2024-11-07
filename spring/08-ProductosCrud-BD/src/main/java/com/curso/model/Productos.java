@@ -16,62 +16,37 @@ import jakarta.persistence.Table;
 public class Productos   {
 	@Id
 	private int codigoProducto;
-	private String titulo;
-	private String tematica;
-	
-	
-	
-	
-	public int getIsbn() {
-		return isbn;
+	private String producto;
+	private double precioUnitario;
+	private int stock;
+	public int getCodigoProducto() {
+		return codigoProducto;
 	}
-
-
-
-
-	public void setIsbn(int isbn) {
-		this.isbn = isbn;
+	public void setCodigoProducto(int codigoProducto) {
+		this.codigoProducto = codigoProducto;
 	}
-
-
-
-
-	public String getTitulo() {
-		return titulo;
+	public String getProducto() {
+		return producto;
 	}
-
-
-
-
-	public void setTitulo(String titulo) {
-		this.titulo = titulo;
+	public void setProducto(String producto) {
+		this.producto = producto;
 	}
-
-
-
-
-	public String getTematica() {
-		return tematica;
+	public double getPrecioUnitario() {
+		return precioUnitario;
 	}
-
-
-
-
-	public void setTematica(String tematica) {
-		this.tematica = tematica;
+	public void setPrecioUnitario(double precioUnitario) {
+		this.precioUnitario = precioUnitario;
 	}
-
-
-
-
+	public int getStock() {
+		return stock;
+	}
+	public void setStock(int stock) {
+		this.stock = stock;
+	}
 	@Override
 	public int hashCode() {
-		return Objects.hash(isbn, tematica, titulo);
+		return Objects.hash(codigoProducto, precioUnitario, producto, stock);
 	}
-
-
-
-
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -81,38 +56,21 @@ public class Productos   {
 		if (getClass() != obj.getClass())
 			return false;
 		Productos other = (Productos) obj;
-		return isbn == other.isbn && Objects.equals(tematica, other.tematica) && Objects.equals(titulo, other.titulo);
+		return codigoProducto == other.codigoProducto
+				&& Double.doubleToLongBits(precioUnitario) == Double.doubleToLongBits(other.precioUnitario)
+				&& Objects.equals(producto, other.producto) && stock == other.stock;
 	}
-
-
-
-
-	@Override
-	public String toString() {
-		return "Libro [isbn=" + isbn + ", titulo=" + titulo + ", tematica=" + tematica + "]";
+	public Productos(int codigoProducto, String producto, double precioUnitario, int stock) {
+		super();
+		this.codigoProducto = codigoProducto;
+		this.producto = producto;
+		this.precioUnitario = precioUnitario;
+		this.stock = stock;
 	}
-
-
-
-
 	public Productos() {
 		super();
 	}
-
-
-
-
-	public Productos(int isbn, String titulo, String tematica) {
-		super();
-		this.isbn = isbn;
-		this.titulo = titulo;
-		this.tematica = tematica;
-	}
-
-
-
-
- 
+	
 	
 
 }
