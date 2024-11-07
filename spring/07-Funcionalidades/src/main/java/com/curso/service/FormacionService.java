@@ -2,7 +2,7 @@ package com.curso.service;
 
 import java.util.List;
 
-import com.curso.model.Empleado;
+import com.curso.model.Formacion;
 
 
 /**
@@ -12,6 +12,7 @@ import com.curso.model.Empleado;
  */
 
 public interface FormacionService {
- 
+	List<Formacion> nuevaFormacion(Formacion formacion);
+	List<Formacion> devolverFormaciones();
  
 }

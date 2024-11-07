@@ -1,13 +1,9 @@
 package com.curso.model;
 
 import java.util.Objects;
-
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-
-@Entity
+ 
 public class Formacion {
-	@Id
+	 
 	private String curso ;
 	private int asignaturas;
 	private double precio;
