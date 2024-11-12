@@ -19,7 +19,7 @@ public class ReservasServiceImpl implements ReservasService{
     @Autowired 
     RestTemplate restTemplate;
     //creamos el repositroy y el template 
-    private final String URL_MICROSERVICIO_VUELO = "http://localhost:8080";
+    private final String URL_MICROSERVICIO_VUELO = "http://localhost:8081";
 	@Override
 	/**
 	 * metodo que busca guarda una reserva obptiene un vuelo y actualiza las plazas que tiene 
