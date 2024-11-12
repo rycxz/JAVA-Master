@@ -18,11 +18,20 @@ public class HotelController {
     private HotelService hotelService;
 
     @GetMapping()
+    /**
+     * metodo con el get para obtener todos los hoteles
+     * @return
+     */
     public List<Hoteles> getAllHotels() {
         return hotelService.obtenerHoteles();
     }
 
     @GetMapping(value = "/{nombreHotel}")
+    /**
+     * metodo que obtiene un hotel por el nombre 
+     * @param nombrehotel
+     * @return
+     */
     public Hoteles getHotelByName (@PathVariable String nombrehotel) {
         return hotelService.obtenerHotelNombre(nombrehotel);
     }

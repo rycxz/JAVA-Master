@@ -10,6 +10,11 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name="hoteles")
+/**
+ * modelo de hoteles  auxiliar
+ * @author Ricardo
+ *
+ */
 public class Hoteles {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

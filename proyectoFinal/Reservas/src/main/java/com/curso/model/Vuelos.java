@@ -9,7 +9,11 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-
+/**
+ * modelo que hace de auxiliar 
+ * @author Ricardo
+ *
+ */
 @Entity
 @Table(name="vuelos")
 public class Vuelos {

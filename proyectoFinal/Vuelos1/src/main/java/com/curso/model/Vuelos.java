@@ -9,7 +9,11 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-
+/**
+ * clase que sirve de modelo para viajes 
+ * @author Admin
+ *
+ */
 @Entity
 @Table(name="vuelos")
 public class Vuelos {

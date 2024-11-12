@@ -10,7 +10,11 @@ import org.springframework.data.repository.query.Param;
 import com.curso.model.Vuelos;
 
 import jakarta.transaction.Transactional;
-
+/**
+ * metodo donde se encuentra las consultas y las querys 
+ * @author Admin
+ *
+ */
 public interface VuelosRepository extends JpaRepository<Vuelos, Integer> {
 
 	@Modifying

@@ -1,0 +1,7 @@
+ primero creamos el modelo necesario , hay que  tener en cuenta de que  las clases que sean difrenetes ya sea por la nomencatura
+ hay que  mencuinalas con una anotacion 
+ depues tendemos que crear el paquete de los service  priemro crearemos la interfaz  y depues la implementacion ,
+ e estas tenmos que adheriros a lo que nos piede el enuncaio o lo que nostros querramos hacer , metodos adicionales,
+ depues tenemos que crear el repository y por ultimo el controller donde se estabecera las diferenetes rutas para nuestro proyecto, 
+ y usaremos el service en el controller. 
+ hay que tener en cuenta que hay que hacer las modficaciones necesarias en el application.propetyes y en el pom.xml

@@ -7,7 +7,11 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
 import com.curso.model.Hoteles;
-
+/**
+ *  Clase con las consultas para los servicios 
+ * @author Ricardo
+ *
+ */
 public interface HotelRepository extends JpaRepository<Hoteles, Integer> {
 	@Query("select h from Hoteles h where h.disponible = true ")
 	public   List<Hoteles> obtenerHotel  ();

@@ -9,9 +9,7 @@ import com.curso.model.Reservas;
 import jakarta.transaction.Transactional;
 
 public interface ReservasRepository extends JpaRepository<Reservas, Integer> {
+		
 
-	/*
-	@Query("SELECT r FROM Reservas r WHERE :nombreHotel like nombreHotel ")
-	 public void devolverReservaNombre(String nombreHotel);
-	 */
+	 
 }
