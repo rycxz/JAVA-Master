@@ -27,8 +27,8 @@ public class HotelServiceImpl implements HotelService{
 	 * metodo que obtiene mediante la query un hotel por su nombre
 	 */
 
-	public Hoteles obtenerHotelNombre( String nombreHotel) {
-		return hotelRepository.obtenerHotelNombre(nombreHotel);
+	public Hoteles obtenerHotelNombre( String nombre ) {
+		return hotelRepository.obtenerHotelNombre(nombre);
 	}
  
 

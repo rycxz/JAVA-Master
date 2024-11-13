@@ -27,11 +27,13 @@ public class ReservasServiceImpl implements ReservasService{
 	 */
 	 
 	public void hacerReserva(Reservas reserva) {
+		
 		int idVuelo = reserva.getIdVuelo();
 		 int idHotel = reserva.getIdHotel();
 		String nombre = reserva.getNombreCliente(); 
 		String dni = reserva.getDni(); 
 		int totalPersonas = reserva.getNumeroPersonas();
+		
 		if (totalPersonas > 0) {
 	        //guardo la reserva
 	        reservasRespository.save(new Reservas(nombre, dni, totalPersonas, idHotel, idVuelo));
@@ -58,7 +60,6 @@ public class ReservasServiceImpl implements ReservasService{
 	@Override
 	public void devolverReservaNombre(String nombreHotel) {
 		 
-		
 	}
 
 

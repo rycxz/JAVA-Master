@@ -20,16 +20,16 @@ public class VuelosServiceImpl implements VuelosService{
 /**
  * metodo que obtiene un vuelo con plazas 
  */
-	public List<Vuelos> obtenerVuelosConPlazas(int plazasReserva) {
+	public List<Vuelos> obtenerVuelosConPlazas(int plazasDisponibles) {
 		 
-		return vuelosRespository.obtenerVuelosConPlazas(plazasReserva);
+		return vuelosRespository.obtenerVuelosConPlazas(plazasDisponibles);
 	}
 
 /**
  * metodo que actualizas los vuelos con dos paramteros que recibe 
  */
-	public void actualizarVuelos(int idVuelo, int plazasReserva) {
-		vuelosRespository.actualizarVuelos(idVuelo, plazasReserva);
+	public void actualizarVuelos(int idVuelo, int plazasDisponibles) {
+		vuelosRespository.actualizarVuelos(idVuelo, plazasDisponibles);
 		
 	}
 

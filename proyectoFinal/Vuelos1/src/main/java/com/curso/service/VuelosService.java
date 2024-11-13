@@ -9,7 +9,7 @@ import com.curso.model.Vuelos;
  *
  */
 public interface VuelosService {
-	List<Vuelos> obtenerVuelosConPlazas( int plazasReserva); 
-	 public void actualizarVuelos(int idVuelo , int plazasReserva);
+	List<Vuelos> obtenerVuelosConPlazas( int plazasDisponibles); 
+	 public void actualizarVuelos(int idVuelo , int plazasDisponibles);
 	 public Vuelos obtenerVuelo(int idVuelo);
 }

@@ -19,7 +19,7 @@ import com.curso.service.VuelosService;
  *
  */
 @RestController
-@RequestMapping("/vuelos")
+@RequestMapping("/api/vuelos")
 public class VuelosController {
     @Autowired
     private VuelosService vuelosService;
@@ -28,27 +28,27 @@ public class VuelosController {
      * @param plazasReserva
      * @return
      */
-    @GetMapping(value = "/{plazasReserva}" ,produces = MediaType.APPLICATION_JSON_VALUE)
-    public List<Vuelos> obtenerVuelosPlazas(@PathVariable int plazasReserva) {
-        return vuelosService.obtenerVuelosConPlazas(plazasReserva);
+    @GetMapping(value = "/{plazasDisponibles}", produces = MediaType.APPLICATION_JSON_VALUE)
+    public List<Vuelos> obtenerVuelosPlazas(@PathVariable int plazasDisponibles) {
+        return vuelosService.obtenerVuelosConPlazas(plazasDisponibles);
     }
     /**
      * metodo que actualiza u vuelo por su id 
      * @param id
      * @param plazasReserva
      */
-    @PutMapping(value = "/{id}/{plazasReserva}", produces = MediaType.APPLICATION_JSON_VALUE)
-    public void actualizarPlazas (@PathVariable int id,@PathVariable int plazasReserva ) {
-    	vuelosService.actualizarVuelos(id, plazasReserva);
+    @PutMapping(value = "/{id}/{plazasDisponibles}", produces = MediaType.APPLICATION_JSON_VALUE)
+    public void actualizarPlazas (@PathVariable int id,@PathVariable int plazasDisponibles ) {
+    	vuelosService.actualizarVuelos(id, plazasDisponibles);
     }
     /**
      * metodo que obitiene un vuelo por el id 
      * @param idVuelo
      * @return
      */
-    @GetMapping(value = "/{idVuelos}" ,produces = MediaType.APPLICATION_JSON_VALUE)
-    public Vuelos obtenerVuelo(@PathVariable int idVuelo) {
-        return vuelosService.obtenerVuelo(idVuelo);
+    @GetMapping(value = "/id/{idVuelos}", produces = MediaType.APPLICATION_JSON_VALUE)
+    public Vuelos obtenerVuelo(@PathVariable int idVuelos) {
+        return vuelosService.obtenerVuelo(idVuelos);
     }
 
 }

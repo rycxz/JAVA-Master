@@ -1,7 +1,5 @@
- primero creamos el modelo necesario , hay que  tener en cuenta de que  las clases que sean difrenetes ya sea por la nomencatura
- hay que  mencuinalas con una anotacion 
- depues tendemos que crear el paquete de los service  priemro crearemos la interfaz  y depues la implementacion ,
- e estas tenmos que adheriros a lo que nos piede el enuncaio o lo que nostros querramos hacer , metodos adicionales,
- depues tenemos que crear el repository y por ultimo el controller donde se estabecera las diferenetes rutas para nuestro proyecto, 
- y usaremos el service en el controller. 
- hay que tener en cuenta que hay que hacer las modficaciones necesarias en el application.propetyes y en el pom.xml
+Este proyecto es una API REST desarrollada con Spring Boot para gestionar vuelos. Está organizada en varias capas: modelo, servicio, repositorio y controlador, siguiendo las mejores prácticas para el diseño de aplicaciones con Spring. El modelo de datos está representado por la clase Vuelos, que mapea las propiedades de un vuelo como el origen, destino y las plazas disponibles. Esta clase se conecta a una base de datos utilizando JPA con las anotaciones @Entity y @Table. Además, se utiliza la interfaz VuelosRepository, que extiende JpaRepository para interactuar con la base de datos de manera sencilla.
+
+En la capa de servicio, se ha definido la interfaz VuelosService que establece los métodos necesarios para interactuar con los vuelos, como obtener vuelos disponibles según plazas, obtener un vuelo por ID y actualizar el número de plazas. La implementación de esta interfaz (VuelosServiceImpl) se encarga de la lógica de negocio, haciendo uso del repositorio para obtener y modificar los datos de los vuelos en la base de datos. Esta separación entre la interfaz y la implementación permite una mayor flexibilidad y escalabilidad en el desarrollo de la aplicación.
+
+Finalmente, el controlador VuelosController define las rutas de la API REST utilizando las anotaciones @GetMapping y @PutMapping para manejar solicitudes HTTP. El controlador interactúa con el servicio para recuperar los vuelos o actualizar su disponibilidad. Además, se ha configurado el archivo application.properties para la conexión a la base de datos, y se han añadido las dependencias necesarias en el pom.xml para asegurar que el proyecto funcione correctamente con Spring Boot y JPA.

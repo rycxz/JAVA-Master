@@ -19,11 +19,11 @@ public interface VuelosRepository extends JpaRepository<Vuelos, Integer> {
 
 	@Modifying
 	@Transactional
-	@Query("UPDATE Vuelos v SET v.plazasDisponibles = :plazas WHERE v.id = :id AND v.plazasDisponibles >= 0")
-	void actualizarVuelos(@Param("id") int idVuelo, @Param("plazas") int plazasReserva);
+	@Query("UPDATE Vuelos v SET v.plazasDisponibles = :plazasDisponibles WHERE v.id = :id AND v.plazasDisponibles >= 0")
+	void actualizarVuelos(@Param("id") int idVuelo, @Param("plazasDisponibles") int plazasDisponibles);
 
-	@Query("SELECT v FROM Vuelos v WHERE v.plazasDisponibles >= :plazas")
-	List<Vuelos> obtenerVuelosConPlazas(@Param("plazas") int plazasReserva);
+	@Query("SELECT v FROM Vuelos v WHERE v.plazasDisponibles >= :plazasDisponibles")
+	List<Vuelos> obtenerVuelosConPlazas(@Param("plazasDisponibles") int plazasDisponibles);
 	
 	
 }

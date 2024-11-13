@@ -11,5 +11,5 @@ import com.curso.model.Hoteles;
  */
 public interface HotelService {
 	List<Hoteles> obtenerHoteles(); 
-	 public Hoteles obtenerHotelNombre(String nombreHotel);
+	 public Hoteles obtenerHotelNombre(String nombre);
 }
